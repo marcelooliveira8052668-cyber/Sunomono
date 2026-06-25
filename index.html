@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunomono Sabor e Qualidade</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; background: #f4f4f4; }
+        
+        /* Banner ajustado com imagem de fundo */
+        .banner { 
+            width: 100%; 
+            height: 300px; 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('sunomono3.jpg'); 
+            background-size: cover; 
+            background-position: center;
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: white; 
+            font-size: 20px; 
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .container { max-width: 800px; margin: auto; padding: 20px; }
+        .card { background: white; margin-bottom: 20px; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .galeria { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 15px; }
+        .galeria img { width: 100%; height: 120px; border-radius: 8px; object-fit: cover; }
+        
+        .btn { background: #25d366; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold; margin-top: 10px; }
+        .mapa { width: 100%; height: 300px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<!-- O texto do banner agora fica sobreposto à imagem -->
+<header class="banner">
+    <h1>Sunomono Sabor e Qualidade</h1>
+</header>
+
+<div class="container">
+    <h2>Nosso Cardápio</h2>
+    
+    <div class="card">
+        <div class="galeria">
+            <img src="sunomono.jpg" alt="Sunomono 1">
+            <img src="sunomono2.jpg" alt="Sunomono 2">
+            
+            
+        </div>
+        
+        <div>
+            <h3>Sunomono</h3>
+            <p>O melhor da culinária Japonesa.</p>
+            <p><strong>R$ 25,00 Pote 300ml</strong></p>
+            <a href="https://wa.me/5511942038103?text=Quero pedir o Sunomono" class="btn">Pedir no WhatsApp</a>
+        </div>
+    </div>
+
+    <h2>Onde estamos (Osasco)</h2>
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.077209355743!2d-46.77498332468789!3d-23.530379678818036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf006a88b5770d%3A0x673030369a473a2!2sOsasco%2C%20SP!5e0!3m2!1spt-PT!2sbr!4v1719266000000!5m2!1spt-PT!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+
+</body>
+</html>
